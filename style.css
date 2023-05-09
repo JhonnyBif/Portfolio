@@ -74,11 +74,24 @@ img{
   justify-content: center;
   align-items: center;
 }
+@keyframes floatImage{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-2.4rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
 .home-img{
   width: 35vw;
   height: 35vh;
   margin-bottom: 30rem;
+  animation: floatImage 4s ease-in-out infinite;
 }
+
 .home-content h3{
   font-size: 3.2rem;
   font-weight: 700;
